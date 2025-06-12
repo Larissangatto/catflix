@@ -6,7 +6,7 @@ import VideosPage from "./videos/page";
 export default function Home() {
   return (
     <>
-      <h2>Ínicio</h2>
+      <h2 className={styles.title}>Ínicio</h2>
       <VideosPage/>
       <MusicsPage/>
       <PodcastsPage/>
