@@ -1,3 +1,4 @@
+import Link from "next/link"
 import "./globals.css"
 
 export const metadata = {
@@ -12,10 +13,10 @@ export default function RootLayout({ children }) {
         <header>
           <h1>Catflix</h1>
           <nav>
-            <a href="/">Home</a>
-            <a href="/videos">Vídeos</a>
-            <a href="/musics">Músicas</a>
-            <a href="/podcasts">Podcasts</a>
+            <Link href="/">Home</Link>
+            <Link href="/videos">Vídeos</Link>
+            <Link href="/musics">Músicas</Link>
+            <Link href="/podcasts">Podcasts</Link>
           </nav>
         </header>
         <main>
