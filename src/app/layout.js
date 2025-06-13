@@ -1,4 +1,5 @@
 import Link from "next/link"
+import styles from "./layout.module.css"
 import "./globals.css"
 
 export const metadata = {
@@ -9,20 +10,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt">
-      <body>
-        <header>
-          <h1>Catflix</h1>
-          <nav>
-            <Link href="/">Home</Link>
-            <Link href="/videos">Vídeos</Link>
-            <Link href="/musics">Músicas</Link>
-            <Link href="/podcasts">Podcasts</Link>
+      <body className={styles.body}>
+        <header className={styles.header}>
+          <Link className={styles.h1Link} href="/"><img src='./favicon.ico'/><h1>Catflix</h1></Link>
+          <nav className={styles.nav}>
+            <Link href="/videos">📽️Vídeos</Link>
+            <Link href="/musics">🎧Músicas</Link>
+            <Link href="/podcasts">🎙️Podcasts</Link>
           </nav>
         </header>
-        <main>
+        <main className={styles.main}>
           {children}
         </main>
-        <footer>
+        <footer className={styles.footer}>
           <p>&copy; 2025 Catflix - Larissa Nathanna Gatto</p>
 
         </footer>
