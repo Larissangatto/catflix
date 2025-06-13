@@ -2,6 +2,7 @@ import Link from "next/link"
 import styles from "./layout.module.css"
 import "./globals.css"
 import "./theme.css"
+import ThemeToggle from "@/components/ThemeToggle"
 
 export const metadata = {
   title: "Catflix",
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
         </main>
         <footer className={styles.footer}>
           <p>&copy; 2025 Catflix - Larissa Nathanna Gatto</p>
-
+          <ThemeToggle/>
         </footer>
       </body>
     </html>
