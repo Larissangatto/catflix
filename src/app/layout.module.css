@@ -3,12 +3,12 @@
     --footer-height:40px;
 }
 .body{
-    color:#eee9ef;
-    background-color: #493c4e;
+    color: var(--text);
+    background-color: var(--background);
 }
 .header{
-    background-color: #5c3e64;
-    border-bottom: 1px solid #333;
+    background-color: var(--background-secundary);
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,7 +22,7 @@
 }
 .header h1 {
     font-size: 36px;
-    color:#d8cde5;
+    color:var(--text-secundary);
     text-transform: uppercase;
 }
 .header nav{
@@ -37,7 +37,7 @@
     transition: color 0.3s;
 }
 .header nav a:hover{
-    color:#000;
+    color:var(--primary-hover);
 }
 .main{
     min-height: calc(100vh - (var(--header-height)+var(--footer-height)));
@@ -45,10 +45,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color:var(--background) ;
 }
 .footer{
-    background-color: #5c3e64;
-    border-top: 1px solid #333;
+    background-color: var(--background-secundary);
+    border-top: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: center;

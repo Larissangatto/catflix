@@ -1,0 +1,22 @@
+:root {
+  --background: #493c4e;
+  --background-secundary: #5c3e64;
+  --text: #eee9ef;
+  --text-secundary: #d8cde5;
+  --primary: #7b508b;
+  --primary-hover: #996bb3;
+  --button-bg: #7b508b;
+  --button-text: #eee9ef;
+  --border-color: #333;
+}
+[data-theme="light"] {
+  --background: #f7f4fa;
+  --background-secundary: #e8e2ef;
+  --text: #2e2e2e;
+  --text-secundary: #5c3e64;
+  --primary: #b28dff;
+  --primary-hover: #9270c4;
+  --button-bg: #b28dff;
+  --button-text: #fff;
+  --border-color: #ccc;
+}
