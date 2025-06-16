@@ -1,0 +1,22 @@
+export function objectToArray(object){
+    return Object
+    .entries(object)
+    .map(([key,data])=>({
+        key,
+        ...data
+    }))
+}
+
+export function getRandomIten(array){
+    return array[Math.floor(Math.random()*array.length)]
+}
+
+export function radomizerArray(array){
+    return [...array].sort(()=>Math.random()-0.5)
+}
+
+export function removeDuplicates(array){
+    return array.filter((item,index,array)=>{
+        array.indexOf(item)===index
+    })
+}
