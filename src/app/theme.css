@@ -8,6 +8,7 @@
   --button-bg: #7b508b;
   --button-text: #eee9ef;
   --border-color: #333;
+  --background-text: rgba(51, 51, 51, 0.7);
 }
 [data-theme="light"] {
   --background: #f7f4fa;
@@ -19,4 +20,5 @@
   --button-bg: #b28dff;
   --button-text: #fff;
   --border-color: #ccc;
+    --background-text: rgba(204, 204, 204, 0.7);
 }

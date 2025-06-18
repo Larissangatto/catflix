@@ -16,20 +16,19 @@
     position: absolute;
     bottom: 0;
     padding: 0 30vw 0 5vw;
-    background: linear-gradient(0deg,var(--background)0%, transparent 50%);
-    text-shadow: 0 0 10px var(--background);
     width: 100%;
+    background-color: var(--background-text); 
 }
 .details > * {
     margin-bottom: 16px;
 }
-.title{
+.title {
     font-size: 32px;
     color: var(--text);
 }
 .description{
     font-size: 16px;
-    color: var(--text-secundary);
+    color: var(--text-secundary);   
 }
 .play{
     display: inline-block;
