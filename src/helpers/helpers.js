@@ -7,7 +7,7 @@ export function objectToArray(object){
     }))
 }
 
-export function getRandomIten(array){
+export function getRandomItem(array){
     return array[Math.floor(Math.random()*array.length)]
 }
 

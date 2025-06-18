@@ -1,0 +1,46 @@
+.video{
+    width:100%;
+    height: 50vh;
+    margin-bottom: 1em;
+    position: relative;
+   
+}
+.thumbnail{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+}
+.details{
+    position: absolute;
+    bottom: 0;
+    padding: 0 30vw 0 5vw;
+    background: linear-gradient(0deg,var(--background)0%, transparent 50%);
+    text-shadow: 0 0 10px var(--background);
+    width: 100%;
+}
+.details > * {
+    margin-bottom: 16px;
+}
+.title{
+    font-size: 32px;
+    color: var(--text);
+}
+.description{
+    font-size: 16px;
+    color: var(--text-secundary);
+}
+.play{
+    display: inline-block;
+    font-size: 18px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 3px 8px;
+    border-radius: 10px;
+    opacity: 0.75;
+    transform: 0.4s;
+}
+.play:hover{
+    opacity: 1;
+}

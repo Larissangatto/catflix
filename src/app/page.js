@@ -1,12 +1,13 @@
 
-import styles from "./page.module.css";
+import HighlightVideo from "@/components/HighlightVideo"
+import styles from "./page.module.css"
 
 
 export default function Home() {
   return (
     <>
-      <h2 className={styles.title}>🏠Home</h2>
-
+      <HighlightVideo/>
+      
     </>
   )
 }

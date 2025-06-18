@@ -18,9 +18,10 @@ export default function RootLayout({ children }) {
           <header className={styles.header}>
             <Link className={styles.h1Link} href="/"><img src='./favicon.ico'/><h1>Catflix</h1><ThemeToggle/></Link>
             <nav className={styles.nav}>
-              <Link href="/videos">📽️Vídeos</Link>
+              <Link href="/videos">📽️Documentários</Link>
               <Link href="/musics">🎧Músicas</Link>
               <Link href="/podcasts">🎙️Podcasts</Link>
+              <Link href="/games">🎮Jogos</Link>
             </nav>
           </header>
           <main className={styles.main}>
