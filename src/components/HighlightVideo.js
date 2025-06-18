@@ -11,7 +11,7 @@ export default function HighlightVideo({tag}){
             
             const response = await fetch('/data/database.json',{
                 next:{
-                    revalidate:20 
+                    revalidate:30 
                 }
             })
             const videos = await response.json()
