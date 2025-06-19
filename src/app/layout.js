@@ -1,6 +1,7 @@
 import Link from "next/link"
 import styles from "./layout.module.css"
 import "./globals.css"
+import "./fonts.css"
 import "./theme.css"
 import ThemeToggle from "@/components/ThemeToggle"
 import { ThemeProvider } from "@/contexts/ThemeContext"
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
       <html lang="pt">
         <body className={styles.body}>
           <header className={styles.header}>
-            <Link className={styles.h1Link} href="/"><img src='./favicon.ico'/><h1>Catflix</h1><ThemeToggle/></Link>
+            <Link className={styles.h1Link} href="/"><img src='./favicon.ico'/><h1 className=  'knewave-regular'>Catflix</h1><ThemeToggle/></Link>
             <nav className={styles.nav}>
               <Link href="/videos">📽️Documentários</Link>
               <Link href="/musics">🎧Músicas</Link>

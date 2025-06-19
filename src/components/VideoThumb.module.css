@@ -3,9 +3,11 @@
     max-width: 320px;
     max-height: 180px;
     min-height: 180px;
-    margin: 20px;
+    margin: 15px;
+    
     transition: transform 0.3s;
     box-shadow: 0 7px 10px var(--text-secundary);
+    border-radius: 10px;
 
 }
 .video:hover{
@@ -17,4 +19,5 @@
     height: 100%;  
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
 }
