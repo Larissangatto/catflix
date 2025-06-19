@@ -1,0 +1,13 @@
+
+.list{
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-color: var(--background-text) var(--background-secundary) ;
+}
+.video{
+    min-width: 320px;
+    min-height: 180px;
+    background: linear-gradient(90deg, rgba(46, 10, 66,0.8) 50%, rgba(153, 124, 180,0.6) 100%);
+    margin-left: 1em;
+}
