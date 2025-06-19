@@ -1,23 +1,15 @@
 "use client"
 import React,{ useEffect, useState } from 'react'
 import styles from './HighlightVideo.module.css'
-import { getRandomItem, objectToArray } from '@/helpers/helpers'
+import { getRandomItem, getVideos, objectToArray } from '@/helpers/helpers'
 import Link from 'next/link'
 
 export default function HighlightVideo({tag}){
     const [ video, setVideo ] = useState(null)
     useEffect (() => {
         async function fetchVideos() {
-            
-            const response = await fetch('/data/database.json',{
-                next:{
-                    revalidate:30 
-                }
-            })
-            const videos = await response.json()
-            const videosList = objectToArray(videos)
-                .filter(video => tag == undefined || video.tags.includes(tag))
-            setVideo(getRandomItem(videosList))
+            const videosList = await getVideos(tag)
+                setVideo(getRandomItem(videosList))
         }
         fetchVideos()
     }, [])

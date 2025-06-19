@@ -1,21 +1,14 @@
 "use client"
 import { useState, useEffect } from 'react'
 import styles from './VideoTag.module.css'
-import { objectToArray, removeDuplicates } from '@/helpers/helpers'
+import { getVideos, objectToArray, removeDuplicates } from '@/helpers/helpers'
 
 export default function VideoTags({tag}){
     const [tags, setTags ]= useState([])
     useEffect (() => {
             async function fetchVideos() {
-                
-                const response = await fetch('/data/database.json',{
-                    next:{
-                        revalidate:30 
-                    }
-                })
-                const videos = await response.json()
-                const videosList = objectToArray(videos)
-                    .filter(video => tag == undefined || video.tags.includes(tag))
+           
+                const videosList = await getVideos(tag)
                 const tagList = removeDuplicates( videosList
                     .map(video =>video.tags)
                     .flat()
