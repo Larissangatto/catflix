@@ -22,11 +22,12 @@ export function removeDuplicates(array){
 }
 export  async function getVideos(tag){
     const response = await fetch('/api/videos',{
-                    next:{revalidate:30}
-                })
-                const videos = await response.json()
-                const videosList = objectToArray(videos)
-                    .filter(video => tag == undefined || video.tags.includes(tag))
-                return videosList
+        method: 'POST',
+        next:{revalidate:30}
+    })
+    const videos = await response.json()
+    const videosList = objectToArray(videos)
+        .filter(video => tag == undefined || video.tags.includes(tag))
+    return videosList
 
 }
