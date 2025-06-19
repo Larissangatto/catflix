@@ -27,3 +27,6 @@ a, button,
 a * ,button *{
   cursor:pointer;
 }
+h2, h3, h4{
+    font-family: var(--irish-font);
+}

@@ -1,3 +1,4 @@
+import localFont from 'next/font/local'
 import Link from "next/link"
 import styles from "./layout.module.css"
 import "./globals.css"
@@ -11,11 +12,12 @@ export const metadata = {
   description: "A melhor organização de vídeos do YouTube",
 }
 
+const irish = localFont({src:'../fonts/irish.woff2',variable: '--irish-font'})
 export default function RootLayout({ children }) {
   return (
     <ThemeProvider>
       <html lang="pt">
-        <body className={styles.body}>
+        <body className={`${styles.body} ${irish.variable}`}>
           <header className={styles.header}>
             <Link className={styles.h1Link} href="/"><img src='./favicon.ico'/><h1 className=  'knewave-regular'>Catflix</h1><ThemeToggle/></Link>
             <nav className={styles.nav}>
