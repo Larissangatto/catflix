@@ -21,7 +21,7 @@ export function removeDuplicates(array){
     )
 }
 export  async function getVideos(tag){
-    const response = await fetch('/data/database.json',{
+    const response = await fetch('/api/videos',{
                     next:{revalidate:30}
                 })
                 const videos = await response.json()
