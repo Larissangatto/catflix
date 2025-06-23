@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <html lang="pt">
         <body className={`${styles.body} ${irish.variable}`}>
           <header className={styles.header}>
-            <Link className={styles.h1Link} href="/"><img src='./favicon.ico'/><h1 className=  'knewave-regular'>Catflix</h1><ThemeToggle/></Link>
+            <Link className={styles.h1Link} href="/"><h1 className=  'knewave-regular'>Catflix</h1><img src='./favicon.ico'/></Link>
             <nav className={styles.nav}>
               <Link href="/videos">📽️Documentários</Link>
               <Link href="/musics">🎧Músicas</Link>

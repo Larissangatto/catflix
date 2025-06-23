@@ -1,7 +1,7 @@
 "use client"
 import React,{ useEffect, useState } from 'react'
 import styles from './HighlightVideo.module.css'
-import { getRandomItem, getVideos, objectToArray } from '@/helpers/helpers'
+import { getRandomItem, getVideos} from '@/helpers/helpers'
 import Link from 'next/link'
 
 export default function HighlightVideo({tag}){
@@ -21,7 +21,7 @@ export default function HighlightVideo({tag}){
             <div className={styles.details}>
                 <h2 className={styles.title}>{video.title}</h2>
                 <p className={styles.description}>{video.description}</p>
-                <Link href ='#'className={styles.play}>Assistir</Link>
+                <Link href ={`/player/${video.key}`} className={styles.play}>Assistir</Link>
             </div>
         </div>
     )

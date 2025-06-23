@@ -14,6 +14,8 @@
     justify-content: space-between;
     height: var(--header-height);
     padding: 0 20px;
+    z-index: 100;
+    position: relative;
 }
 .h1Link{
     display: flex;
@@ -54,4 +56,6 @@
     font-size: 14px;
     padding:0 20px;
     height: var(--footer-height);
+    z-index: 150;
+    position: relative;
 }
