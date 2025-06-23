@@ -33,6 +33,7 @@
 }
 .header img{
     border-radius: 5px; 
+    max-width: 50px;
 }
 .header nav a{
     font-size: 20px;

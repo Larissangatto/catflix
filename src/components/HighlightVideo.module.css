@@ -17,6 +17,7 @@
     bottom: 0;
     padding: 0 30vw 0 5vw;
     width: 100%;
+    background: linear-gradient(0deg,var(--border-color), transparent 100%);
 }
 .details > * {
     margin-bottom: 16px;
@@ -31,7 +32,8 @@
     color: var(--text-secundary);
     text-shadow: 0 0 5px var(--background-text),0 0 5px var(--background-text),0 0 5px var(--background-text), 0 0 5px var(--background-text), 0 0 5px var(--background-text), 0 0 5px var(--background-text);
 }
-.play{
+.play,
+.lucky{
     display: inline-block;
     font-size: 18px;
     background-color: var(--button-bg);
@@ -43,7 +45,14 @@
     text-shadow: 0 0 5px var(--background-text),0 0 5px var(--background-text),0 0 5px var(--background-text), 0 0 5px var(--background-text), 0 0 5px var(--background-text), 0 0 5px var(--background-text);
 
 }
-.play:hover{
+.play{
+    margin-right: 1em;
+}
+.lucky{
+    background-color: var(--border-color);
+}
+.play:hover,
+.lucky:hover{
     opacity: 1;
 
 
