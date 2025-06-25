@@ -10,6 +10,11 @@ import { ThemeProvider } from "@/contexts/ThemeContext"
 export const metadata = {
   title: "Catflix",
   description: "A melhor organização de vídeos do YouTube",
+  openGraph:{
+    title: "Catflix",
+    description: "A melhor organização de vídeos do YouTube",
+    images:['/logo.png']
+  }
 }
 
 const irish = localFont({src:'../fonts/irish.woff2',variable: '--irish-font'})
