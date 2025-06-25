@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { objectToArray } from '@/helpers/helpers';
 import { getVideos } from '@/helpers/helpers-server';
 
-export async function GET(_, { params }){
+export async function POST(_, { params }){
     const {vyoutube} = await params
     const videos = await getVideos()
     const videosList = objectToArray(videos)
