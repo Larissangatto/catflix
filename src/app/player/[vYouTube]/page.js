@@ -11,7 +11,7 @@ export default function PlayerPage(){
         async function setTitle() {
             const response =await fetch(`/api/video/${vYouTube}`, {method:'POST'})
             const video = await response.json()
-            document.title = `${video.title} -${document.title}`}
+            document.title = `${video?.title ?? ''} -${document.title}`}
     setTitle()
     },[])
    
