@@ -13,7 +13,7 @@ export default function VideoList({tag}){
                 setVideos(videosList)
             }
             fetchVideos()
-        }, [])
+        }, [tag])
     return(
         <div className={styles.list}>
             {videos.map(video => <VideoThumb key={video.key} video={video}/> )}

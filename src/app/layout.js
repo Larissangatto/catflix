@@ -6,6 +6,7 @@ import "./fonts.css"
 import "./theme.css"
 import ThemeToggle from "@/components/ThemeToggle"
 import { ThemeProvider } from "@/contexts/ThemeContext"
+import Image from 'next/image'
 
 export const metadata = {
   title: "Catflix",
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
 
             <Link href="/" className={styles.h1Link}>
               <h1 className="knewave-regular">Catflix</h1>
-              <img src="/logo.png" alt="Logo" />
+              < Image  src="/logo.png" alt="Logo" width={100} height={100}/>
             </Link>
             <nav className={styles.nav}>
               <Link href="/videos">📽️Documentários</Link>

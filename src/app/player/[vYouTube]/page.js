@@ -13,7 +13,7 @@ export default function PlayerPage(){
             const video = await response.json()
             document.title = `${video.title } -${document.title}`}
     setTitle()
-    },[])
+    },[vYouTube])
    
     
     return(

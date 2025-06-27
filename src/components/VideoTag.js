@@ -18,7 +18,7 @@ export default function VideoTags({tag}){
                 setTags(tagList)
             }
             fetchVideos()
-        }, [])
+        }, [tag])
     return(
         tags.map(tag => (
             <div key={tag} className={styles.tag}>
