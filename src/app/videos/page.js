@@ -9,8 +9,8 @@ export const metadata= {
 export default function VideosPage(){
     return(
         <>
-            <HighlightVideo  tag = 'Documentários'/>
-            <VideoTags tag = 'Documentários'/>
+            <HighlightVideo tag= 'Documentários'/>
+            <VideoTags tag= 'Documentários'/>
         </>
     )
 }

@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react'
 import styles from './VideoTag.module.css'
-import { getVideos, objectToArray, removeDuplicates } from '@/helpers/helpers'
+import { getVideos, removeDuplicates } from '@/helpers/helpers'
 import VideoList from './VideoList'
 
 export default function VideoTags({tag}){
