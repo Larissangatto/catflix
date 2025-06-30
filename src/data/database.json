@@ -1378,14 +1378,6 @@
             "Agitos Internacionais"
         ]
     },
-    "mxSctsDAz8E": {
-        "title": "Summer Feelings Remix",
-        "description": "Entre no clima do verão com este mix de remixes animados. Músicas populares que vão animar seu dia e trazer boas vibrações.",
-        "tags": [
-            "Músicas",
-            "Agitos Internacionais"
-        ]
-    },
     "yZLD4VQ7UVk": {
         "title": "Músicas Alegres para Trabalhar",
         "description": "Uma playlist com músicas animadas e motivadoras para criar o clima perfeito no escritório, lojas ou cafés.",
@@ -1850,14 +1842,6 @@
             "Lo-Fi Relaxantes"
         ]
     },
-    "HQwLPhE2zys": {
-        "title": "Lofi Cidade Retrô",
-        "description": "Batidas lofi ambientadas em uma cidade retro dos anos 90. Perfeito para relaxar e se concentrar.",
-        "tags": [
-            "Músicas",
-            "Lo-Fi Relaxantes"
-        ]
-    },
     "0H87zumc8DU": {
         "title": "Café Relaxante Lofi",
         "description": "Um mix de lofi para acompanhar seu café da manhã ou tarde. Trilha perfeita para momentos de calma.",
@@ -1961,7 +1945,8 @@
             "Músicas",
             "Lo-Fi Relaxantes"
         ]
-    }, "UhM7mACb4lg": {
+    },
+    "UhM7mACb4lg": {
         "title": "Como Ayrton Senna Usou A Tecnologia Para Dominar A Fórmula 1",
         "description": "Descubra como Senna dominava a telemetria, o turbo e outras tecnologias que revolucionaram a F1 nos anos 80 e 90.",
         "tags": [
@@ -2006,7 +1991,7 @@
             "Tendências"
         ]
     },
-     "LHOTt7IhSG0": {
+    "LHOTt7IhSG0": {
         "title": "20 Melhores Jogos Cooperativos do Nintendo Switch",
         "description": "Tem algo mais legal do que jogar videogame com as pessoas que a gente gosta? E tem console melhor para fazer isso do que o Nintendo Switch? Vem com a gente que hoje iremos listar nossos 20 melhores jogos favoritos para jogar um multiplayer cooperativo no switão da massa. Destaque esses joycons e vamos lá!",
         "tags": [
@@ -2015,7 +2000,7 @@
             "Switch"
         ]
     },
-        "lsEuBV1uAO4": {
+    "lsEuBV1uAO4": {
         "title": "Fórmula 1: O Esporte Que Quer Controlar O Incontrolável | Be Fast Podcast #65",
         "description": "Por que a Fórmula 1 é tão emocionante quando tudo foge do roteiro? Neste episódio, o Be Fast Podcast explora como a imprevisibilidade transforma o esporte.",
         "tags": [
@@ -2024,6 +2009,4 @@
             "Esporte"
         ]
     }
-
-    
 }

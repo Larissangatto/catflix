@@ -25,21 +25,11 @@
     color:var(--text-secundary);
     text-transform: uppercase;
 }
-.header nav{
-    display: flex;
-    gap:20px;
-}
 .header img{
     border-radius: 5px; 
     max-width: 50px;
 }
-.header nav a{
-    font-size: 20px;
-    transition: color 0.3s;
-}
-.header nav a:hover{
-    color:var(--primary-hover);
-}
+
 .main{
     min-height: calc(100vh - (var(--header-height)+var(--footer-height)));
     display: flex;
