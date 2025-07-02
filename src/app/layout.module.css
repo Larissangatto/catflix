@@ -38,7 +38,7 @@
 }
 
 .footer{
-    position: absolute;
+    position: relative;
     width: 100%;
     background-color: var(--background-secundary);
     border-top: 1px solid var(--border-color);
