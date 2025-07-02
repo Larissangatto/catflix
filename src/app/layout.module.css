@@ -36,14 +36,10 @@
     flex-direction: column;
     background-color:var(--background) ;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
 .footer{
-    position: relative;
+    position: absolute;
+    width: 100%;
     background-color: var(--background-secundary);
     border-top: 1px solid var(--border-color);
     display: flex;
