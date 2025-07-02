@@ -28,20 +28,22 @@ export default function RootLayout({ children }) {
     <ThemeProvider>
       <html lang="pt">
         <body className={`${styles.body} ${irish.variable}`}>
-          <header className={styles.header}>
-            <Link href="/" className={styles.h1Link}>
-              <h1 className="knewave-regular">Catflix</h1>
-              <Image src="/logo.png" alt="Logo" width={100} height={100} />
-            </Link>
-            <HamburguerMenu />
-          </header>
-          <main className={styles.main}>{children}</main>
-          <footer className={styles.footer}>
-            <p>&copy; 2025 Catflix - Larissa Nathanna Gatto</p>
-            <ThemeToggle />
-          </footer>
+          <div className={styles.container}>
+            <header className={styles.header}>
+              <Link href="/" className={styles.h1Link}>
+                <h1 className="knewave-regular">Catflix</h1>
+                <Image src="/logo.png" alt="Logo" width={100} height={100} />
+              </Link>
+              <HamburguerMenu />
+            </header>
+            <main className={styles.main}>{children}</main>
+            <footer className={styles.footer}>
+              <p>&copy; 2025 Catflix - Larissa Nathanna Gatto</p>
+              <ThemeToggle />
+            </footer>
+          </div>
         </body>
       </html>
     </ThemeProvider>
-  )
+  );
 }
