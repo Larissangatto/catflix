@@ -27,8 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <ThemeProvider>
       <html lang="pt">
-        <body className={`${styles.body} ${irish.variable}`}>
-          <div className={styles.container}>
+        <body className={`${styles.body} ${irish.variable}`}>     
             <header className={styles.header}>
               <Link href="/" className={styles.h1Link}>
                 <h1 className="knewave-regular">Catflix</h1>
@@ -41,7 +40,6 @@ export default function RootLayout({ children }) {
               <p>&copy; 2025 Catflix - Larissa Nathanna Gatto</p>
               <ThemeToggle />
             </footer>
-          </div>
         </body>
       </html>
     </ThemeProvider>
