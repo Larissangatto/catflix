@@ -49,4 +49,5 @@
     padding:0 20px;
     height: var(--footer-height);
     z-index: 1250;
+    bottom: 0;
 }
