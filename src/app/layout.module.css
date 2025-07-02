@@ -45,6 +45,6 @@
     font-size: 14px;
     padding:0 20px;
     height: var(--footer-height);
-    z-index: 1500;
+    z-index: 1250;
     position: relative;
 }
