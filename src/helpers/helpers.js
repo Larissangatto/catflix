@@ -20,14 +20,18 @@ export function removeDuplicates(array){
         array.indexOf(item)===index
     )
 }
-export  async function getVideos(tag){
+export  async function getVideos(tag, subTag){
     const response = await fetch('/api/videos',{
         method: 'POST',
         next:{revalidate:30}
     })
     const videos = await response.json()
     const videosList = objectToArray(videos)
-        .filter(video => tag == undefined || video.tags.includes(tag))
-    return videosList
+
+    return videosList.filter(video => {
+    const tags = video.tags || [];
+    return (!tag || tags[0] === tag) &&
+           (!subTag || tags[1] === subTag);
+  })
 
 }

@@ -11,10 +11,10 @@ import HamburguerMenu from "@/components/HamburguerMenu";
 
 export const metadata = {
   title: "Catflix",
-  description: "A melhor organização de vídeos do YouTube",
+  description: "Vídeos do seu jeito",
   openGraph: {
     title: "Catflix",
-    description: "A melhor organização de vídeos do YouTube",
+    description: "Vídeos do seu jeito",
     images: ["/logo.png"],
   },
 };
@@ -43,5 +43,5 @@ export default function RootLayout({ children }) {
         </body>
       </html>
     </ThemeProvider>
-  );
+  )
 }
